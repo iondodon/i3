@@ -114,6 +114,9 @@ bindsym $mod+a focus parent
 # next workspace
 bindsym $mod+Tab workspace next
 
+# switch workspace
+bindsym Mod1+Tab workspace back_and_forth
+
 # focus the child container
 #bindsym $mod+d focus child
 
