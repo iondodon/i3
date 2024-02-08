@@ -111,12 +111,27 @@ bindsym $mod+space exec --no-startup-id rofi -show filebrowser
 # focus the parent container
 bindsym $mod+a focus parent
 
-# next workspace
+
+
+
+##
+## SWITCH
+##
 # bindsym $mod+Tab workspace next
-bindsym $mod+Tab exec --no-startup-id rofi -show window
+# bindsym $mod+Tab exec --no-startup-id rofi -show window
+# bindsym $mod+Tab exec ~/new_folder/bin/i3wins	
+# bindsym $mod+Tab exec rofi -show run -kb-row-down 'Alt+Tab'
+
+# to show rofi configurations -> rofi -dump-config > config.rasi
+bindsym $mod+Tab exec --no-startup-id rofi -show window -run-command "i3-msg exec '{cmd}'" -show-icons -kb-row-down 'Super+Tab' 
+# -kb-accept-entry '!Super' 
+
+
+
+
 
 # switch workspace
-bindsym Mod1+Tab workspace back_and_forth
+# bindsym Mod1+Tab workspace back_and_forth
 
 # focus the child container
 #bindsym $mod+d focus child
