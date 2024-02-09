@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -123,7 +123,7 @@ bindsym $mod+a focus parent
 # bindsym $mod+Tab exec rofi -show run -kb-row-down 'Alt+Tab'
 
 # to show rofi configurations -> rofi -dump-config > config.rasi
-bindsym $mod+Tab exec --no-startup-id rofi -show window -run-command "i3-msg exec '{cmd}'" -show-icons -kb-row-down 'Super+Tab' 
+bindsym $mod+Tab exec --no-startup-id rofi -show window -run-command "i3-msg exec '{cmd}'" -show-icons -kb-row-down 'Alt+Tab' -kb-accept-entry '!Alt+Alt_L' 
 # -kb-accept-entry '!Super' 
 
 
