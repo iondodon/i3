@@ -123,7 +123,7 @@ bindsym $mod+a focus parent
 
 # to show rofi configurations -> rofi -dump-config > config.rasi
 # bindsym $mod+Tab exec --no-startup-id rofi -kb-row-down Alt-Tab -kb-accept-entry '!Alt-Tab,!Alt-Alt_L,!Alt_L' -show window -run-command "i3-msg exec '{cmd}'" -show-icons
-bindsym $mod+Tab exec bash ~/.config/i3/rofi.sh 
+bindsym $mod+Tab exec bash ~/.config/i3/rofi.sh -m alttab 
 
 # switch workspace
 # bindsym Mod1+Tab workspace back_and_forth
