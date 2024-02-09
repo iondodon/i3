@@ -123,7 +123,7 @@ bindsym $mod+a focus parent
 # bindsym $mod+Tab exec rofi -show run -kb-row-down 'Alt+Tab'
 
 # to show rofi configurations -> rofi -dump-config > config.rasi
-bindsym $mod+Tab exec --no-startup-id rofi -show window -run-command "i3-msg exec '{cmd}'" -show-icons -kb-row-down 'Alt+Tab' -kb-accept-entry '!Alt+Alt_L' 
+bindsym $mod+Tab exec --no-startup-id rofi -kb-accept-entry '!Alt-Tab' -kb-row-down Alt-Tab -show window -run-command "i3-msg exec '{cmd}'" -show-icons 
 # -kb-accept-entry '!Super' 
 
 
