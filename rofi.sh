@@ -52,7 +52,8 @@ eval $(xdotool getmouselocation --shell)
 
 # Launch rofi
 export ROFI_DUMP_WINDOW_POSITION="$(mktemp)"
-rofi \
+# unclutter is from unclutter-xfixes
+unclutter --start-hidden & rofi \
     -kb-cancel "Alt+Escape,Escape" \
     -kb-accept-entry '!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return'$KB_ACCEPT_APPEND \
     -kb-row-down 'Alt-Tab,Alt+Down,Down' \
@@ -87,6 +88,7 @@ wait "$rofipid"
 
 # Move the cursor back to its original position
 xdotool mousemove $X $Y
+killall unclutter
 
 # Clean up
 rm -f "$ROFI_DUMP_WINDOW_POSITION"
