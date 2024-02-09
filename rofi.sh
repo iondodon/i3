@@ -57,7 +57,8 @@ rofi \
     -kb-accept-entry '!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return'$KB_ACCEPT_APPEND \
     -kb-row-down 'Alt-Tab,Alt+Down,Down' \
     -kb-row-up 'Alt+ISO_Left_Tab,Alt+Up,Up' \
-    "${ROFI_ARGS[@]}"&
+    "${ROFI_ARGS[@]}" \
+    -show window -run-command "i3-msg exec '{cmd}'" -show-icons&
 rofipid="$!"
 
 # The strategy to move the cursor into the rofi window immediately after it appears
