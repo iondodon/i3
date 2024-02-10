@@ -124,7 +124,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Tab exec bash ~/.config/i3/rofi.sh -m alttab 
 
 # switch workspace
-bindsym Mod4+Tab workspace back_and_forth
+# bindsym Mod4+Tab workspace back_and_forth
 
 # focus the child container
 #bindsym $mod+d focus child
