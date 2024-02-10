@@ -115,17 +115,16 @@ bindsym $mod+a focus parent
 
 
 ##
-## SWITCH
+## Select application with rofi
 ##
 # bindsym $mod+Tab workspace next
 # bindsym $mod+Tab exec --no-startup-id rofi -show window
 # bindsym $mod+Tab exec ~/new_folder/bin/i3wins
-
 # to show rofi configurations -> rofi -dump-config > config.rasi
 bindsym $mod+Tab exec bash ~/.config/i3/rofi.sh -m alttab 
 
 # switch workspace
-# bindsym Mod1+Tab workspace back_and_forth
+bindsym Mod4+Tab workspace back_and_forth
 
 # focus the child container
 #bindsym $mod+d focus child
