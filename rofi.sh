@@ -60,7 +60,7 @@ unclutter --start-hidden & rofi \
     -kb-row-up 'Alt+ISO_Left_Tab,Alt+Up,Up' \
     "${ROFI_ARGS[@]}" \
     -show window -run-command "i3-msg exec '{cmd}'" -show-icons \
-    -font "mono 25"&
+    -theme "~/.config/i3/rofi_theme.rasi"&
 
 rofipid="$!"
 
