@@ -133,11 +133,11 @@ bindsym $mod+Tab exec --no-startup-id ~/.config/i3/ws.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 " 1: Browser "
-set $ws2 " 2: Code    "
-set $ws3 " 3: Chat    "
-set $ws4 " 4: Terminal"
-set $ws5 " 5: Temp    "
+set $ws1 "1: Browser "
+set $ws2 "2: Code    "
+set $ws3 "3: Chat    "
+set $ws4 "4: Terminal"
+set $ws5 "5: Temp    "
 
 # switch to workspace
 #bindsym $mod+1 workspace number $ws1
