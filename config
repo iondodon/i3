@@ -205,3 +205,5 @@ new_window none
 exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled" 1
 
 # install fzf
+# install sudo apt-get install pavucontrol
+
