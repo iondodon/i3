@@ -121,8 +121,8 @@ bindsym $mod+a focus parent
 # bindsym $mod+Tab exec --no-startup-id rofi -show window
 # bindsym $mod+Tab exec ~/new_folder/bin/i3wins
 # to show rofi configurations -> rofi -dump-config > config.rasi
-bindsym $mod+Tab exec --no-startup-id rofi -kb-accept-entry "Alt_L" -kb-row-down 'Alt-Tab' -kb-row-up "Up" -show window -show-icons
-
+# bindsym $mod+Tab exec --no-startup-id rofi -kb-accept-entry "Alt_L" -kb-row-down 'Alt-Tab' -kb-row-up "Up" -show window -show-icons
+bindsym $mod+Tab exec --no-startup-id ~/.config/i3/ws.sh
 
 
 # switch workspace
