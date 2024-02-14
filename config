@@ -118,7 +118,7 @@ bindsym $mod+a focus parent
 # bindsym $mod+Tab exec --no-startup-id rofi -show window
 # bindsym $mod+Tab exec ~/new_folder/bin/i3wins
 # to show rofi configurations -> rofi -dump-config > config.rasi
-bindsym $mod+Tab exec --no-startup-id rofi -kb-accept-entry 'Alt_L' -show window -show-icons
+# bindsym $mod+Tab exec --no-startup-id rofi -kb-accept-entry 'Alt_L' -show window -show-icons
 
 
 # switch workspace
@@ -203,6 +203,9 @@ bar {
 new_window none
 
 exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled" 1
+
+for_window [title="First GTK Program"] floating enable
+exec /home/iondodon/i3-switcher-x11/target/debug/i3-switcher-x11 
 
 # install fzf
 
