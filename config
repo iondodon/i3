@@ -129,11 +129,11 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Browser "
-set $ws2 "2: Code    "
-set $ws3 "3: Chat    "
-set $ws4 "4: Terminal"
-set $ws5 "5: Temp    "
+set $ws1 "1:Browser "
+set $ws2 "2:Code    "
+set $ws3 "3:Chat    "
+set $ws4 "4:Terminal"
+set $ws5 "5:Temp    "
 
 # switch to workspace
 #bindsym $mod+1 workspace number $ws1
@@ -205,7 +205,7 @@ new_window none
 exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled" 1
 
 for_window [title="First GTK Program"] floating enable
-exec /home/iondodon/i3-switcher-x11/target/debug/i3-switcher-x11 
+exec i3-switcher-x11 
 
 # install fzf
 
