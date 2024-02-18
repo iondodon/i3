@@ -204,8 +204,8 @@ new_window none
 
 exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled" 1
 
-for_window [title="First GTK Program"] floating enable
-exec i3-switcher-x11 
+for_window [title="i3switcherX11"] floating enable
+exec --no-startup-id i3-switcher-x11 
 
 # install fzf
 
