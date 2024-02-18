@@ -205,6 +205,7 @@ new_window none
 exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled" 1
 
 for_window [title="i3switcherX11"] floating enable
+for_window [title="i3switcherX11"] move scratchpad
 exec --no-startup-id i3-switcher-x11 
 
 exec --no-startup-id xrandr --output HDMI-1 --auto --output DP-2 --auto --left-of HDMI-1
