@@ -206,8 +206,7 @@ exec xinput set-prop "VEN_0488:00 0488:1024 Touchpad" "libinput Tapping Enabled"
 
 for_window [title="i3switcherX11"] floating enable
 exec --no-startup-id i3-switcher-x11 
-
-exec --no-startup-id xrandr --output HDMI-1 --auto --output DP-2 --auto --left-of HDMI-1
+exec --no-startup-id xrandr --output DVI-D-0 --auto --output HDMI-0 --auto --left-of DVI-D-0
 
 
 # install fzf
