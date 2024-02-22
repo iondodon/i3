@@ -210,9 +210,8 @@ for_window [title="i3switcherX11"] floating enable
 exec --no-startup-id i3-switcher-x11 
 exec --no-startup-id xrandr --output DVI-D-0 --auto --output HDMI-0 --auto --left-of DVI-D-0
 
-
 # install fzf
 
-# install for audio devices 
-# sudo apt install pavucontrol, sudo apt install qasmixer
+# audio: 	pavucontrol, qasmixer
+# bluetooth:	blueman
 
